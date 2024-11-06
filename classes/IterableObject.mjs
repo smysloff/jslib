@@ -11,7 +11,9 @@ export default class IterableObject {
    * @param {...*} args - Arguments to be passed to the iterator.
    */
   constructor(iterator, ...args) {
-    this[Symbol.iterator] = () => new iterator(...args)
+    this[Symbol.iterator]() {
+      return new iterator(...args)
+    }
   }
 
 }
