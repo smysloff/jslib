@@ -9,11 +9,11 @@ A set of methods for checking data types in JavaScript.
 ```javascript
 import { isNumber } from './jsqolib/utils.mjs'
 
-console.log(isNumber(10))   // true
-console.log(isNumber('10')) // true
-console.log(isNumber([10])) // false
-console.log(isNumber(null)) // false
-console.log(isNumber(''))   // false
+isNumber(10)   // true
+isNumber('10') // true
+isNumber([10]) // false
+isNumber(null) // false
+isNumber('')   // false
 ```
 
 ### List of checkers
@@ -41,14 +41,17 @@ Gets a string representation of the date and time in the specified format.
 ```javascript
 import { dateTime } from './jsqolib/utils.mjs'
 
-// Returns the current date and time in the format 'YYYY-MM-DD HH:mm:ss'
-DateTime.getDateTime()
+// Current date and time in the format 'YYYY-MM-DD HH:mm:ss'
+dateTime()
 
-// Returns the current date in the format 'DD-MM-YYYY'
-DateTime.getDateTime('%d-%m-%Y')
+// Current date in the format 'DD-MM-YYYY'
+dateTime('%d-%m-%Y')
 
-// Returns custom date in the default format
-DateTime.getDateTime(customDateObject)
+// Custom date in the format 'YYYY-MM-DD HH:mm:ss'
+dateTime(customDateObject)
+
+// Custom date in the format 'DD-MM-YYYY'
+dateTime(customDateObject, '%d-%m-%Y')
 ```
 
 
