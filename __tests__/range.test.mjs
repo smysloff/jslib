@@ -2,7 +2,7 @@
 
 /* imports */
 import Tests from '../classes/Tests.mjs'
-import { range } from '../utils.mjs'
+import { range } from '../index.mjs'
 
 /* constants */
 const tests = new Tests()
