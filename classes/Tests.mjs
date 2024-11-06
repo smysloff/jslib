@@ -1,9 +1,10 @@
-// file: Tests.mjs
+/* file: classes/Tests.mjs */
 
 /**
  * A class for running and managing tests.
  */
 export default class Tests {
+
   /**
    * Creates an instance of the Tests class.
    * Initializes the test and error counters.

@@ -1,7 +1,10 @@
+/* file: classes/IteratorResponse.mjs */
+
 /**
  * Represents the response of an iterator.
  */
 export default class IteratorResponse {
+
   /**
    * Creates an instance of IteratorResponse.
    * @param {*} value - The value to be returned by the iterator.
@@ -10,4 +13,5 @@ export default class IteratorResponse {
     this.value = value
     this.done = value == null
   }
+
 }

@@ -1,8 +1,13 @@
-import Type from '../TypeChecker.mjs'
-import Tests from '../Tests.mjs'
+/* file: __tests__/types.test.mjs */
 
+/* imports */
+import Type from '../classes/TypeChecker.mjs'
+import Tests from '../classes/Tests.mjs'
+
+/* constants */
 const tests = new Tests()
 
+/* isNull */
 tests.run('isNull', Type.isNull, undefined,         'false')
 tests.run('isNull', Type.isNull, null,              'true')
 tests.run('isNull', Type.isNull, 0,                 'false')
@@ -28,6 +33,7 @@ tests.run('isNull', Type.isNull, false,             'false')
 tests.run('isNull', Type.isNull, true,              'false')
 tests.run('isNull', Type.isNull, new Map(),         'false')
 
+/* isUndefined */
 tests.run('isUndefined', Type.isUndefined, undefined,         'true')
 tests.run('isUndefined', Type.isUndefined, null,              'false')
 tests.run('isUndefined', Type.isUndefined, 0,                 'false')
@@ -53,6 +59,7 @@ tests.run('isUndefined', Type.isUndefined, false,             'false')
 tests.run('isUndefined', Type.isUndefined, true,              'false')
 tests.run('isUndefined', Type.isUndefined, new Map(),         'false')
 
+/* isNone */
 tests.run('isNone', Type.isNone, undefined,         'true')
 tests.run('isNone', Type.isNone, null,              'true')
 tests.run('isNone', Type.isNone, 0,                 'false')
@@ -78,6 +85,7 @@ tests.run('isNone', Type.isNone, false,             'false')
 tests.run('isNone', Type.isNone, true,              'false')
 tests.run('isNone', Type.isNone, new Map(),         'false')
 
+/* isBool */
 tests.run('isBool', Type.isBool, undefined,         'false')
 tests.run('isBool', Type.isBool, null,              'false')
 tests.run('isBool', Type.isBool, 0,                 'false')
@@ -103,6 +111,7 @@ tests.run('isBool', Type.isBool, false,             'true')
 tests.run('isBool', Type.isBool, true,              'true')
 tests.run('isBool', Type.isBool, new Map(),         'false')
 
+/* isObject */
 tests.run('isObject', Type.isObject, undefined,         'false')
 tests.run('isObject', Type.isObject, null,              'false')
 tests.run('isObject', Type.isObject, 0,                 'false')
@@ -128,6 +137,7 @@ tests.run('isObject', Type.isObject, false,             'false')
 tests.run('isObject', Type.isObject, true,              'false')
 tests.run('isObject', Type.isObject, new Map(),         'true')
 
+/* isArray */
 tests.run('isArray', Type.isArray, undefined,         'false')
 tests.run('isArray', Type.isArray, null,              'false')
 tests.run('isArray', Type.isArray, 0,                 'false')
@@ -153,6 +163,7 @@ tests.run('isArray', Type.isArray, false,             'false')
 tests.run('isArray', Type.isArray, true,              'false')
 tests.run('isArray', Type.isArray, new Map(),         'false')
 
+/* isString */
 tests.run('isString', Type.isString, undefined,         'false')
 tests.run('isString', Type.isString, null,              'false')
 tests.run('isString', Type.isString, 0,                 'false')
@@ -178,6 +189,7 @@ tests.run('isString', Type.isString, false,             'false')
 tests.run('isString', Type.isString, true,              'false')
 tests.run('isString', Type.isString, new Map(),         'false')
 
+/* isEmptyString */
 tests.run('isEmptyString', Type.isEmptyString, undefined,         'false')
 tests.run('isEmptyString', Type.isEmptyString, null,              'false')
 tests.run('isEmptyString', Type.isEmptyString, 0,                 'false')
@@ -203,6 +215,7 @@ tests.run('isEmptyString', Type.isEmptyString, false,             'false')
 tests.run('isEmptyString', Type.isEmptyString, true,              'false')
 tests.run('isEmptyString', Type.isEmptyString, new Map(),         'false')
 
+/* isWhiteSpaceString */
 tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, undefined,         'false')
 tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, null,              'false')
 tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, 0,                 'false')
@@ -228,6 +241,7 @@ tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, false,             'fal
 tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, true,              'false')
 tests.run('isWhiteSpaceString', Type.isWhiteSpaceString, new Map(),         'false')
 
+/* isNumber */
 tests.run('isNumber', Type.isNumber, undefined,         'false')
 tests.run('isNumber', Type.isNumber, null,              'false')
 tests.run('isNumber', Type.isNumber, 0,                 'true')
@@ -253,6 +267,7 @@ tests.run('isNumber', Type.isNumber, false,             'false')
 tests.run('isNumber', Type.isNumber, true,              'false')
 tests.run('isNumber', Type.isNumber, new Map(),         'false')
 
+/* isFunction */
 tests.run('isFunction', Type.isFunction, undefined,         'false')
 tests.run('isFunction', Type.isFunction, null,              'false')
 tests.run('isFunction', Type.isFunction, 0,                 'false')
@@ -278,6 +293,7 @@ tests.run('isFunction', Type.isFunction, false,             'false')
 tests.run('isFunction', Type.isFunction, true,              'false')
 tests.run('isFunction', Type.isFunction, new Map(),         'false')
 
+/* isIterable */
 tests.run('isIterable', Type.isIterable, undefined,         'false')
 tests.run('isIterable', Type.isIterable, null,              'false')
 tests.run('isIterable', Type.isIterable, 0,                 'false')
@@ -303,4 +319,5 @@ tests.run('isIterable', Type.isIterable, false,             'false')
 tests.run('isIterable', Type.isIterable, true,              'false')
 tests.run('isIterable', Type.isIterable, new Map(),         'true')
 
+/* results */
 tests.result()

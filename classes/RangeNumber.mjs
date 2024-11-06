@@ -1,10 +1,13 @@
+/* file: classes/RangeNumber.mjs */
+
 import IterableObject from './IterableObject.mjs'
 import RangeIterator from './RangeIterator.mjs'
 
 /**
  * Class for creating a range of numbers.
  */
-export class RangeNumber {
+export default class RangeNumber {
+
   /**
    * Creates an instance of RangeNumber.
    * @param {number} from - The starting number of the range.
@@ -39,15 +42,3 @@ export class RangeNumber {
     }
   }
 }
-
-/**
- * Creates a range of numbers.
- * @param {number} from - The starting number of the range.
- * @param {number} to - The ending number of the range.
- * @param {number} [step=1] - The step value for the range.
- * @returns {IterableObject} An iterable object representing the range.
- */
-export function range(from, to, step) {
-  return new RangeNumber(from, to, step)
-}
-

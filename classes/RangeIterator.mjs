@@ -1,3 +1,5 @@
+/* file: classes/RangeIterator.mjs */
+
 import AbstractBaseIterator from './AbstractBaseIterator.mjs'
 import IteratorResponse from './IteratorResponse.mjs'
 
@@ -5,6 +7,7 @@ import IteratorResponse from './IteratorResponse.mjs'
  * Iterator for generating a range of numbers.
  */
 export default class RangeIterator extends AbstractBaseIterator {
+
   /**
    * Creates an instance of RangeIterator.
    * @param {number} from - The starting number of the range.
@@ -12,6 +15,7 @@ export default class RangeIterator extends AbstractBaseIterator {
    * @param {number} step - The step value for the range.
    */
   constructor(from, to, step) {
+
     super()
 
     // Scale factor to maintain precision

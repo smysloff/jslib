@@ -1,3 +1,5 @@
+/* file: classes/TypeChecker.mjs */
+
 /**
  * The TypeChecker class provides static methods
  * for checking data types in JavaScript.
@@ -132,16 +134,3 @@ export default class TypeChecker {
   }
 
 }
-
-export const isNull             = TypeChecker.isNull
-export const isUndefined        = TypeChecker.isUndefined
-export const isNone             = TypeChecker.isNone
-export const isBool             = TypeChecker.isBool
-export const isObject           = TypeChecker.isObject
-export const isArray            = TypeChecker.isArray
-export const isString           = TypeChecker.isString
-export const isEmptyString      = TypeChecker.isEmptyString
-export const isWhiteSpaceString = TypeChecker.isWhiteSpaceString
-export const isNumber           = TypeChecker.isNumber
-export const isFunction         = TypeChecker.isFunction
-export const isIterable         = TypeChecker.isIterable

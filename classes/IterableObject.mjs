@@ -1,7 +1,10 @@
+/* file: classes/IterableObject.mjs */
+
 /**
  * Represents an iterable object.
  */
 export default class IterableObject {
+
   /**
    * Creates an instance of IterableObject.
    * @param {Function} iterator - The iterator function.
@@ -10,4 +13,5 @@ export default class IterableObject {
   constructor(iterator, ...args) {
     this[Symbol.iterator] = () => new iterator(...args)
   }
+
 }
