@@ -7,7 +7,7 @@ A small JavaScript library that enhances quality of life by solving various prob
 A set of methods for checking data types in JavaScript.
 
 ```javascript
-import { isNumber } from './jslib/utils.mjs'
+import { isNumber } from './jsqolib/utils.mjs'
 
 console.log(isNumber(10))   // true
 console.log(isNumber('10')) // true
@@ -34,12 +34,30 @@ console.log(isNumber(''))   // false
 | isIterable         | Checks if the value is iterable                                 |
 
 
+## DateTime
+
+Gets a string representation of the date and time in the specified format.
+
+```javascript
+import { dateTime } from './jsqolib/utils.mjs'
+
+// Returns the current date and time in the format 'YYYY-MM-DD HH:mm:ss'
+DateTime.getDateTime()
+
+// Returns the current date in the format 'DD-MM-YYYY'
+DateTime.getDateTime('%d-%m-%Y')
+
+// Returns custom date in the default format
+DateTime.getDateTime(customDateObject)
+```
+
+
 ## RangeNumber
 
 Creates a range of numbers with the specified step (default is 1). The function uses lazy evaluation, which allows to create a conditionally infinite range.
 
 ```javascript
-import { range } from './jslib/utils.mjs'
+import { range } from './jsqolib/utils.mjs'
 
 for (const number in range(0, 5)) {
   console.log(number) // 0, 1, 2, 3, 4, 5

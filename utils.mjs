@@ -3,6 +3,7 @@
 /* imports */
 import TypeChecker from './classes/TypeChecker.mjs'
 import RangeNumber from './classes/RangeNumber.mjs'
+import DateTime from './classes/DateTime.mjs'
 
 /* TypeChecker */
 export const isNull             = TypeChecker.isNull
@@ -17,6 +18,9 @@ export const isWhiteSpaceString = TypeChecker.isWhiteSpaceString
 export const isNumber           = TypeChecker.isNumber
 export const isFunction         = TypeChecker.isFunction
 export const isIterable         = TypeChecker.isIterable
+
+/* DateTime */
+export const dateTime = DateTime.getDateTime
 
 /* RangeNumber */
 export function range(from, to, step) {
