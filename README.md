@@ -1,6 +1,6 @@
-# JSLib
+# JSQoLib
 
-A small JavaScript library that solves various problems.
+A small JavaScript library that enhances quality of life by solving various problems.
 
 ## TypeChecker
 
@@ -9,13 +9,16 @@ A set of methods for checking data types in JavaScript.
 ```javascript
 import { isNumber } from './jslib/utils.mjs'
 
-console.log(isNumber('10')) // true false
-console.log(isNumber([10])) // true false
+console.log(isNumber(10))   // true
+console.log(isNumber('10')) // true
+console.log(isNumber([10])) // false
+console.log(isNumber(null)) // false
+console.log(isNumber(''))   // false
 ```
 
 ### List of checkers
 
-| function           | description                                                     |
+|                    |                                                                 |
 |--------------------|-----------------------------------------------------------------|
 | isNull             | Checks if the value is null                                     |
 | isUndefined        | Checks if the value is undefined                                |
@@ -25,7 +28,7 @@ console.log(isNumber([10])) // true false
 | isArray            | Checks if the value is an array                                 |
 | isString           | Checks if the value is a string                                 |
 | isEmptyString      | Checks if the string is empty                                   |
-| isWhiteSpaceString | Checks if the string consists only of whitespace                |
+| isWhiteSpaceString | Checks if the string is empty or consists only of whitespace    |
 | isNumber           | Checks if the value is a number or a string containing a number |
 | isFunction         | Checks if the value is a function                               |
 | isIterable         | Checks if the value is iterable                                 |
