@@ -1,10 +1,10 @@
 /* file: utils.mjs */
 
 /* imports */
-import TypeChecker from './src/TypeChecker.mjs'
-import DateTime from './src/DateTime.mjs'
-import Random from './src/Random.mjs'
-import RangeNumber from './src/RangeNumber.mjs'
+import TypeChecker from './TypeChecker.mjs'
+import DateTime from './DateTime.mjs'
+import Random from './Random.mjs'
+import RangeNumber from './RangeNumber.mjs'
 
 /* TypeChecker */
 export const isNull             = TypeChecker.isNull

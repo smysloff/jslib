@@ -1,6 +1,6 @@
 {
   "name": "qolib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small JavaScript library that enhances Quality of Life by solving various problems.",
   "keywords": [
     "is-null",
@@ -37,6 +37,8 @@
   "main": "index.mjs",
   "scripts": {
     "test": "__tests__/__run_tests.sh | grep -e 'tests' -e 'errors'",
+    "compile": "npx babel src --out-dir lib",
+    "prepublish": "npm run compile",
     "tree": "tree --gitignore -C"
   },
   "files": [
@@ -44,5 +46,11 @@
     "index.js",
     "README.md",
     "package.json"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/plugin-transform-class-properties": "^7.25.9"
+  }
 }
