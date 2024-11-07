@@ -34,7 +34,7 @@
     "url": "https://github.com/smysloff/jsqolib/issues",
     "email": "kokoc.smyslov@yandex.ru"
   },
-  "main": "lib/index.mjs",
+  "main": "lib/index.js",
   "scripts": {
     "test": "__tests__/__run_tests.sh | grep -e 'tests' -e 'errors'",
     "compile": "npx babel src --out-dir lib",
