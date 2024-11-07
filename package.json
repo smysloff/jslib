@@ -1,6 +1,6 @@
 {
   "name": "qolib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small JavaScript library that enhances Quality of Life by solving various problems.",
   "keywords": [
     "is-null",
@@ -34,7 +34,7 @@
     "url": "https://github.com/smysloff/jsqolib/issues",
     "email": "kokoc.smyslov@yandex.ru"
   },
-  "main": "index.mjs",
+  "main": "lib/index.mjs",
   "scripts": {
     "test": "__tests__/__run_tests.sh | grep -e 'tests' -e 'errors'",
     "compile": "npx babel src --out-dir lib",
@@ -42,7 +42,7 @@
     "tree": "tree --gitignore -C"
   },
   "files": [
-    "src/",
+    "lib/",
     "index.js",
     "README.md",
     "package.json"
