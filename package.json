@@ -28,7 +28,7 @@
   "homepage": "https://github.com/smysloff/jsqolib#readme",
   "repository": {
     "type": "github",
-    "url": "https://github.com/smysloff/jsqolib.git"
+    "url": "git+https://github.com/smysloff/jsqolib.git"
   },
   "bugs": {
     "url": "https://github.com/smysloff/jsqolib/issues",
