@@ -1,13 +1,13 @@
-# JSQoLib
+# QoLib for JavaScript
 
-A small JavaScript library that enhances quality of life by solving various problems.
+A small JavaScript library that enhances Quality of Life by solving various problems.
 
 ## TypeChecker
 
 A set of methods for checking data types in JavaScript.
 
 ```javascript
-import { isNumber } from './jsqolib/index.mjs'
+import { isNumber } from 'qolib'
 
 isNumber(10)   // true
 isNumber('10') // true
@@ -39,7 +39,7 @@ isNumber('')   // false
 Gets a string representation of the date and time in the specified format.
 
 ```javascript
-import { dateTime } from './jsqolib/index.mjs'
+import { dateTime } from 'qolib'
 
 // Current date and time in the format 'YYYY-MM-DD HH:mm:ss'
 dateTime()
@@ -60,6 +60,8 @@ dateTime(customDateObject, '%d-%m-%Y')
 Generates a random integer between minimum and maximum values.
 
 ```javascript
+import { random } from 'qolib'
+
 random(0, 4) // random int between 0-4 inclusive
 ```
 
@@ -69,11 +71,18 @@ random(0, 4) // random int between 0-4 inclusive
 Creates a range of numbers with the specified step (default is 1). The function uses lazy evaluation, which allows to create a conditionally infinite range.
 
 ```javascript
-import { range } from './jsqolib/index.mjs'
+import { range } from 'qolib'
 
 for (const number in range(0, 5)) {
   console.log(number) // 0, 1, 2, 3, 4, 5
 }
 
 console.log(...range(-5, 5, 2)) // -5, -3, -1, 1, 3, 5
+```
+
+
+## Installation
+
+```sh
+npm i qolib
 ```
