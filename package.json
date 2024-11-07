@@ -1,6 +1,6 @@
 {
   "name": "qolib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small JavaScript library that enhances Quality of Life by solving various problems.",
   "keywords": [
     "is-null",
