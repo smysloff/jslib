@@ -1,4 +1,4 @@
-/* file: classes/DateTime.mjs */
+/* file: DateTime.mjs */
 
 /**
  * DateTime class for working with date and time.

@@ -1,4 +1,4 @@
-/* file: classes/TypeChecker.mjs */
+/* file: TypeChecker.mjs */
 
 /**
  * The TypeChecker class provides static methods

@@ -1,4 +1,4 @@
-/* file: classes/IteratorResponse.mjs */
+/* file: IteratorResponse.mjs */
 
 /**
  * Represents the response of an iterator.

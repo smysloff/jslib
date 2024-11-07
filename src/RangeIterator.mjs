@@ -1,4 +1,4 @@
-/* file: classes/RangeIterator.mjs */
+/* file: RangeIterator.mjs */
 
 import AbstractBaseIterator from './AbstractBaseIterator.mjs'
 import IteratorResponse from './IteratorResponse.mjs'

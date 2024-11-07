@@ -1,9 +1,10 @@
 /* file: utils.mjs */
 
 /* imports */
-import TypeChecker from './classes/TypeChecker.mjs'
-import RangeNumber from './classes/RangeNumber.mjs'
-import DateTime from './classes/DateTime.mjs'
+import TypeChecker from './src/TypeChecker.mjs'
+import DateTime from './src/DateTime.mjs'
+import Random from './src/Random.mjs'
+import RangeNumber from './src/RangeNumber.mjs'
 
 /* TypeChecker */
 export const isNull             = TypeChecker.isNull
@@ -21,6 +22,9 @@ export const isIterable         = TypeChecker.isIterable
 
 /* DateTime */
 export const dateTime = DateTime.getDateTime
+
+/* Random */
+export const random = Random.getRandom
 
 /* RangeNumber */
 export function range(from, to, step) {

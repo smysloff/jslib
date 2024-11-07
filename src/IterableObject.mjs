@@ -1,4 +1,4 @@
-/* file: classes/IterableObject.mjs */
+/* file: IterableObject.mjs */
 
 /**
  * Represents an iterable object.

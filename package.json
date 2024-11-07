@@ -1,24 +1,48 @@
 {
-  "name": "jsqolib",
+  "name": "qolib",
   "version": "0.0.1",
-  "description": "A small JavaScript library that enhances quality of life by solving various problems.",
-  "main": "index.mjs",
-  "scripts": {
-    "test": "__tests__/__run_tests.sh",
-    "tree": "tree --gitignore -C"
-  },
+  "description": "A small JavaScript library that enhances Quality of Life by solving various problems.",
   "keywords": [
-    "isnumber",
-    "isiterable"
+    "is-null",
+    "is-undefined",
+    "is-none",
+    "is-bool",
+    "is-object",
+    "is-array",
+    "is-string",
+    "is-emptystring",
+    "is-whitespacestring",
+    "is-number",
+    "is-function",
+    "is-iterable",
+    "range",
+    "datetime",
+    "random"
   ],
+  "license": "MIT",
   "author": {
     "name": "Alexander Smyslov",
     "email": "<kokoc.smyslov@yandex.ru>",
     "url": "http://ddevhut.com"
   },
-  "license": "MIT",
+  "homepage": "https://github.com/smysloff/jsqolib#readme",
   "repository": {
     "type": "github",
     "url": "https://github.com/smysloff/jsqolib.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/smysloff/jsqolib/issues",
+    "email": "kokoc.smyslov@yandex.ru"
+  },
+  "main": "index.mjs",
+  "scripts": {
+    "test": "__tests__/__run_tests.sh | grep -e 'tests' -e 'errors'",
+    "tree": "tree --gitignore -C"
+  },
+  "files": [
+    "src/",
+    "index.js",
+    "README.md",
+    "package.json"
+  ]
 }

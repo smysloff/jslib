@@ -1,4 +1,4 @@
-/* file: classes/RangeNumber.mjs */
+/* file: RangeNumber.mjs */
 
 import IterableObject from './IterableObject.mjs'
 import RangeIterator from './RangeIterator.mjs'

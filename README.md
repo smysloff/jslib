@@ -55,6 +55,15 @@ dateTime(customDateObject, '%d-%m-%Y')
 ```
 
 
+## Random
+
+Generates a random integer between minimum and maximum values.
+
+```javascript
+random(0, 4) // random int between 0-4 inclusive
+```
+
+
 ## RangeNumber
 
 Creates a range of numbers with the specified step (default is 1). The function uses lazy evaluation, which allows to create a conditionally infinite range.

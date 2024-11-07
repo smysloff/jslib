@@ -1,4 +1,4 @@
-/* file: classes/Tests.mjs */
+/* file: Tests.mjs */
 
 /**
  * A class for running and managing tests.

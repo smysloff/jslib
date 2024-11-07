@@ -1,8 +1,8 @@
 /* file: __tests__/types.test.mjs */
 
 /* imports */
-import Type from '../classes/TypeChecker.mjs'
-import Tests from '../classes/Tests.mjs'
+import Type from '../src/TypeChecker.mjs'
+import Tests from '../src/Tests.mjs'
 
 /* constants */
 const tests = new Tests()

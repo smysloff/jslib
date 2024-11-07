@@ -1,7 +1,7 @@
 /* file: __tests__/range.test.mjs */
 
 /* imports */
-import Tests from '../classes/Tests.mjs'
+import Tests from '../src/Tests.mjs'
 import { range } from '../index.mjs'
 
 /* constants */
