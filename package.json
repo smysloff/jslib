@@ -1,6 +1,6 @@
 {
   "name": "qolib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A small JavaScript library that enhances Quality of Life by solving various problems.",
   "keywords": [
     "is-null",
@@ -20,6 +20,7 @@
     "random"
   ],
   "license": "MIT",
+  "type": "module",
   "author": {
     "name": "Alexander Smyslov",
     "email": "<kokoc.smyslov@yandex.ru>",
@@ -34,23 +35,26 @@
     "url": "https://github.com/smysloff/jsqolib/issues",
     "email": "kokoc.smyslov@yandex.ru"
   },
-  "main": "lib/index.js",
+  "main": "lib/esm/index.mjs",
+  "exports": {
+    "import": "./lib/esm/index.mjs",
+    "require": "./lib/cjs/index.cjs"
+  },
   "scripts": {
     "test": "__tests__/__run_tests.sh | grep -e 'tests' -e 'errors'",
-    "compile": "npx babel src --out-dir lib",
-    "prepublish": "npm run compile",
+    "build": "npx rollup -c",
+    "prepublish": "npm run build",
     "tree": "tree --gitignore -C"
   },
   "files": [
     "lib/",
-    "index.js",
     "README.md",
     "package.json"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/plugin-transform-class-properties": "^7.25.9"
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.24.4"
   }
 }
